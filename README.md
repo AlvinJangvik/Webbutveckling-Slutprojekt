@@ -7,3 +7,5 @@ Wireframes:
   Historia: https://wireframe.cc/UOBAGI
   Kläder: https://wireframe.cc/Ua62xC
   Film: https://wireframe.cc/sEpGbo
+  
+Sitemap: https://www.gloomaps.com/qkzCleQoXT
