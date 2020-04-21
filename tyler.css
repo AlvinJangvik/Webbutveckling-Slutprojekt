@@ -1,8 +1,19 @@
 body 
 {
-	background-image: url("Tyler_huvud2.png");
 	background-size: 155px auto;
 	background-color: #A3FAFC;
+}
+
+main p
+{
+	color: black;
+	text-align: center;
+	font-family: arial;
+	font-size: 40px;
+	width: 1000px;
+	word-wrap: break-word;
+	margin: auto;
+	margin-top: 200px;
 }
 
 h1
@@ -39,17 +50,17 @@ h1
 }
 
 .meny a{
-    /*Gör hela diven till ett block så man kommer till länken om man klickar någonstans innanför diven*/
+    /*Gör hela naven till ett block så man kommer till länken om man klickar någonstans innanför diven*/
     display:block;
     /*Gör länkarnas texten vit*/
-    color:white;
+    color:black;
     /*Tar bort understruckingen och så länkarna inte ändrar färg*/
     text-decoration:none;
 }
 
 .meny nav:hover{
     /*Gör bakgrunden till svart när man håller muspekaren över dem*/
-    background-color:black;
+    background-color:blue;
     /*Gör textens färg till vit när man håller muspekaren över dem*/
     color:white;
 }
