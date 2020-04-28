@@ -4,6 +4,26 @@ body
 	background-color: #A3FAFC;
 }
 
+.Album
+{
+	margin-top:80px;
+	margin-left:280px;
+	margin-right:250px;
+	background-size:300px;
+	width:300px;
+	height:300px;
+	border-radius:50px;
+}
+
+.Tyler
+{
+	width:30em;
+	height:20em;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .NormalP
 {
 	color: black;
@@ -14,6 +34,10 @@ body
 	word-wrap: break-word;
 	margin: auto;
 	margin-top: 150px;
+}
+
+lighter
+{
 }
 
 th
