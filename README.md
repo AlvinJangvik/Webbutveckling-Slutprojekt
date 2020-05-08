@@ -8,4 +8,4 @@ Wireframes:
   Kläder: https://wireframe.cc/Ua62xC
   Film: https://wireframe.cc/sEpGbo
   
-Sitemap: https://www.gloomaps.com/qkzCleQoXT
+Sitemap: https://www.gloomaps.com/qkzCleQoXT  <-- Färdig
