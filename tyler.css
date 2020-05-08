@@ -1,64 +1,69 @@
-body 
+body  /*Bakgrunds färg på alla sidor.*/
 {
-	background-size: 155px auto;
-	background-color: #A3FAFC;
+	background-color: #A3FAFC;/*Ljus blå*/
 }
 
-.Album
+.Album /*Klass för form, storlek och mellanrum på album bilderna*/
 {
-	margin-top:80px;
-	margin-left:280px;
-	margin-right:250px;
-	background-size:300px;
-	width:300px;
-	height:300px;
-	border-radius:50px;
+	margin-top:80px; /*Flyttar ner den från rubriken som gör att det ser snyggare ut*/
+	margin-left:280px; /*Testade mig fram till vad som såg bra ut på min skärm, är dock inte dynamisk så skärmar med annan storlek ser det annorlunda ut för*/
+	margin-right:250px; /*Testade mig fram till vad som såg bra ut på min skärm, är dock inte dynamisk så skärmar med annan storlek ser det annorlunda ut för*/
+	width:300px; /*Höjden på bilde*/
+	height:300px; /*Brädden på bilde*/
+	border-radius:50px; /*Gör att albumen får runda hörn*/
 }
 
-.Tyler
+.Tyler /*Klass för bilden på tyler*/
 {
-	width:30em;
-	height:20em;
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
+	width:30em; /*em är relativ till font storleken på sidan, testade mig fram tills bilden såg bra ut*/
+	height:20em; /*em är relativ till font storleken på sidan, testade mig fram tills bilden såg bra ut*/
+	display: block; /*Gör att jag kan använda auto för att få den i mitten*/
+	margin-left:auto; /*Flyttar den automatiskt till mitten*/
+	margin-right:auto; /*Flyttar den automatiskt till mitten*/
 }
 
-.NormalP
+.NormalP /*Standard klass för de flästa P taggarna men för att jag har andra klasser på vissa så är det en klass*/
 {
 	color: black;
-	text-align: center;
-	font-family: arial;
-	font-size: 40px;
-	width: 1000px;
-	word-wrap: break-word;
-	margin: auto;
-	margin-top: 150px;
+	text-align: center; /*Flyttar den automatiskt till mitten*/
+	font-family: arial; /*Sätter Fonten*/
+	font-size: 40px; /*Font storlek*/
+	width: 1000px; /*Hur bred texten kan va utan att dela upp sig till en rad under*/
+	word-wrap: break-word;/*Får texten att automatiskt dela upp sig i paragrafer*/
+	margin: auto; /*Flyttar den automatiskt till mitten*/
+	margin-top: 150px; /*Flyttar ned texten från vad som är över för att det ser snyggare ut*/
 }
 
-lighter
-{
-}
-
-th
+th /*Ändrar storleken på th taggen som tilllhör table taggen*/
 {
 	font-size:30px;
+}
+
+
+li 
+{
+	display: table; /*Gör att jag kan använda auto för att få den i mitten*/
+	margin: auto; /*Flyttar den automatiskt till mitten*/
+	font-size: 20px;
 }
 
 h1
 {
 	font-family: arial;
 	font-size: 60px;
-	text-align: center;
+	text-align: center; /*Flyttar den automatiskt till mitten*/
 }
-iframe
+iframe /*Videoklippet*/
 {
-	width:560px;
-	height:315px;
-	margin-left:570px;
+	width:560px; /*Flyttad hit från inline css, läs mer på Film.html koden vid iframe taggen*/
+	height:315px; /*Flyttad hit från inline css, läs mer på Film.html koden vid iframe taggen*/
+	display: block; /*Gör att jag kan använda auto för att få den i mitten*/
+	margin-left:auto; /*Flyttar den automatiskt till mitten*/
+	margin-right: auto; /*Flyttar den automatiskt till mitten*/
+	border:0; /*Flyttad hit från inline css, läs mer på Film.html koden vid iframe taggen*/
 }
 
-/*Meny*/
+/*Meny koden fick jag av filip men har ändrat på den för att bevisa att jag förstår den, samt tagit bort onödiga koddelar*/
 
 .meny
 {    /*Skapar en grid i meny för att placera länkarna i senare*/
@@ -67,8 +72,6 @@ iframe
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     /*Gör meny till en grid area som heter nav för att kunna sätta den i sidans grid senare*/
     grid-area: nav;
-    /*Ändrar bakgrundfärgen till vit*/
-    background-color:white;
     /*Ändrar storleken på texten i globala menyn till 25 pixlar*/
     font-size:25px;
 }
@@ -84,19 +87,17 @@ iframe
 }
 
 .meny a{
-    /*Gör hela naven till ett block så man kommer till länken om man klickar någonstans innanför diven*/
+    /*Gör hela naven till ett block så man kommer till länken om man klickar någonstans innanför naven*/
     display:block;
-    /*Gör länkarnas texten vit*/
+    /*Gör länkarnas texten svart*/
     color:black;
     /*Tar bort understruckingen och så länkarna inte ändrar färg*/
     text-decoration:none;
 }
 
 .meny nav:hover{
-    /*Gör bakgrunden till svart när man håller muspekaren över dem*/
-    background-color:blue;
-    /*Gör textens färg till vit när man håller muspekaren över dem*/
-    color:white;
+    /*Gör bakgrunden till ljus gröm när man håller muspekaren över dem*/
+    background-color:#00fac2;
 }
 
 
