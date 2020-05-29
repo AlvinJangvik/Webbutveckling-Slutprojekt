@@ -7,22 +7,27 @@
 	</head>
 	<body>
 		<header class="meny"> <!--Globala menyn-->
-			<nav><a href="index.html">Tyler</a></nav>
-			<nav><a href="Musik.html">Musik</a></nav>
-			<nav><a href="Historia.html">Historia</a></nav>
-			<nav><a href="Kläder.html">Kläder</a></nav>
-			<nav><a href="Film.html">Film</a></nav>
+			<ul>
+				<li><a href="index.html">Tyler</a></li>
+				<li><a href="Musik.html">Musik</a></li>
+				<li><a href="Historia.html">Historia</a></li>
+				<li><a class="active" href="Kläder.html">Kläder</a></li>
+				<li><a href="Film.html">Film</a></li>
+			</ul>
 		</header>
 		<h1>Golf le Fleur</h1> <!--Rubrik-->
 		<main> <!--Huvud del på sidan-->
-			<table> <!--Start av table-->
-				<tr>
-					<th><p>Tyler var alltid intreserad i kläder  </p><p>  och gillade när det stod golf på dem, <!--Delade upp den själv för att jag ville få den att se så bra ut som möjligt-->
-					så även  </p><p>  fast det inte är ett golf  </p><p> klädesmärke så fick det heta golf </p></th>
-					<th><img alt="bild på en sko" src="GOLF.jpg"></th> <!--Bild på en sko-->
-					<th>Denna skon var ett samarbete mellan Golf le Fleur och Converse</th>
-				</tr>
-			</table>
+			<div class="grid_kläder">
+				<div>
+					<p>Tyler var alltid intreserad i kläder och gillade när det stod golf på dem, så även fast det inte är ett golf klädesmärke så fick det heta golf</p> 
+				</div>
+				<div>
+					<img class="sko" alt="bild på en sko" src="GOLF.jpg"> <!--Bild på en sko-->
+				</div>
+				<div>
+					<p>Denna skon var ett samarbete mellan Golf le Fleur och Converse</p>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>

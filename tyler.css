@@ -3,6 +3,12 @@ body  /*Bakgrunds färg på alla sidor.*/
 	background-color: #A3FAFC;/*Ljus blå*/
 }
 
+video
+{
+	width: 300px;
+	height: 180px;
+}
+
 .Album /*Klass för form, storlek och mellanrum på album bilderna*/
 {
 	margin-top:80px; /*Flyttar ner den från rubriken som gör att det ser snyggare ut*/
@@ -13,7 +19,13 @@ body  /*Bakgrunds färg på alla sidor.*/
 	border-radius:50px; /*Gör att albumen får runda hörn*/
 }
 
-.Tyler /*Klass för bilden på tyler*/
+.sko
+{
+	width:200px;
+	height:150px;
+}
+
+#Tyler /*Klass för bilden på tyler*/
 {
 	width:30em; /*em är relativ till font storleken på sidan, testade mig fram tills bilden såg bra ut*/
 	height:20em; /*em är relativ till font storleken på sidan, testade mig fram tills bilden såg bra ut*/
@@ -22,28 +34,24 @@ body  /*Bakgrunds färg på alla sidor.*/
 	margin-right:auto; /*Flyttar den automatiskt till mitten*/
 }
 
-.NormalP /*Standard klass för de flästa P taggarna men för att jag har andra klasser på vissa så är det en klass*/
+p /*Standard klass för de P taggarna*/
 {
 	color: black;
 	text-align: center; /*Flyttar den automatiskt till mitten*/
 	font-family: arial; /*Sätter Fonten*/
-	font-size: 40px; /*Font storlek*/
-	width: 1000px; /*Hur bred texten kan va utan att dela upp sig till en rad under*/
+	font-size: 25px; /*Font storlek*/
+	width: 200px; /*Hur bred texten kan va utan att dela upp sig till en rad under*/
 	word-wrap: break-word;/*Får texten att automatiskt dela upp sig i paragrafer*/
 	margin: auto; /*Flyttar den automatiskt till mitten*/
-	margin-top: 150px; /*Flyttar ned texten från vad som är över för att det ser snyggare ut*/
 }
 
-th /*Ändrar storleken på th taggen som tilllhör table taggen*/
+th, td /*Ändrar storleken på th och td taggen som tilllhör table taggen*/
 {
 	font-size:30px;
 }
 
-
 li 
 {
-	display: table; /*Gör att jag kan använda auto för att få den i mitten*/
-	margin: auto; /*Flyttar den automatiskt till mitten*/
 	font-size: 20px;
 }
 
@@ -53,6 +61,7 @@ h1
 	font-size: 60px;
 	text-align: center; /*Flyttar den automatiskt till mitten*/
 }
+
 iframe /*Videoklippet*/
 {
 	width:560px; /*Flyttad hit från inline css, läs mer på Film.html koden vid iframe taggen*/
@@ -65,39 +74,61 @@ iframe /*Videoklippet*/
 
 /*Meny koden fick jag av filip men har ändrat på den för att bevisa att jag förstår den, samt tagit bort onödiga koddelar*/
 
-.meny
-{    /*Skapar en grid i meny för att placera länkarna i senare*/
-    display:grid;
-    /*Bestämmer storleken för columnerna i griden och gör dem alla lika stora (1 fraktions mellanrum)*/
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    /*Gör meny till en grid area som heter nav för att kunna sätta den i sidans grid senare*/
-    grid-area: nav;
-    /*Ändrar storleken på texten i globala menyn till 25 pixlar*/
-    font-size:25px;
-}
 
-.meny nav
+ul
 {
-    /*Sätter texten i mitten*/
-    text-align:center;
-    /*Ändrar bakgrundsfärgen till blå*/
-    background-color:#A3FAFC;
-    /*Gör alla div 5% pixlar större åt alla håll*/
-    padding:5%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#A3FAFC;
 }
 
-.meny a{
-    /*Gör hela naven till ett block så man kommer till länken om man klickar någonstans innanför naven*/
-    display:block;
-    /*Gör länkarnas texten svart*/
-    color:black;
-    /*Tar bort understruckingen och så länkarna inte ändrar färg*/
-    text-decoration:none;
+li
+{
+	float: left;
 }
 
-.meny nav:hover{
-    /*Gör bakgrunden till ljus gröm när man håller muspekaren över dem*/
-    background-color:#00fac2;
+li > a
+{
+	display: block;
+	color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+li > a:hover {
+  background-color: rgb(134, 212, 195);
+}
+
+li > a:visited
+{
+	/*färg när man har besökt en sida*/
+	background-color:rgb(162, 212, 0);
+}
+
+li > a:active
+{
+	/*fär på linken till sidan man är på*/
+	background-color:rgb(50, 50, 130);
+}
+
+/*Grid för kläder*/
+.grid_kläder
+{
+	display: grid;
+	grid-template-columns:auto auto auto;
+}
+
+/*Grid för albumen*/
+.grid_album
+{
+	display: grid;
+	grid-template-columns:auto auto;
+}
+
+
+
 
 
