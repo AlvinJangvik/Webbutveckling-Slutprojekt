@@ -3,7 +3,7 @@ body  /*Bakgrunds färg på alla sidor.*/
 	background-color: #A3FAFC;/*Ljus blå*/
 }
 
-video
+video /*storlek för videon*/
 {
 	width: 300px;
 	height: 180px;
@@ -72,9 +72,7 @@ iframe /*Videoklippet*/
 	border:0; /*Flyttad hit från inline css, läs mer på Film.html koden vid iframe taggen*/
 }
 
-/*Meny koden fick jag av filip men har ändrat på den för att bevisa att jag förstår den, samt tagit bort onödiga koddelar*/
-
-
+/*Gjorde om koden för menyn helt så den är i list form*/
 ul
 {
 	list-style-type: none;
@@ -84,7 +82,7 @@ ul
 	background-color:#A3FAFC;
 }
 
-li
+li /*gör den vertical*/
 {
 	float: left;
 }
@@ -98,19 +96,19 @@ li > a
     text-decoration: none;
 }
 
-li > a:hover {
+li > a:hover { /*när musen är över*/
   background-color: rgb(134, 212, 195);
 }
 
-li > a:visited
+li > a:visited /*om man nyligen har vart på den sidan*/
 {
 	/*färg när man har besökt en sida*/
 	background-color:rgb(162, 212, 0);
 }
 
-li > a:active
+li > a:active /*den sidan som är aktic*/
 {
-	/*fär på linken till sidan man är på*/
+	/*färg på linken till sidan man är på*/
 	background-color:rgb(50, 50, 130);
 }
 
